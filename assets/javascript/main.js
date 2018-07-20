@@ -10,7 +10,7 @@ $(document).ready(function () {
             a.addClass("music");
             a.attr("data-name", music[i]);
             a.text(music[i]);
-            $("#buttonHolder").append(a);
+            $("#buttonHolder").prepend(a);
         }
 
     }
