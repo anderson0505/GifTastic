@@ -42,10 +42,10 @@ $(document).ready(function () {
                 image.attr("data-state", "still");
                 image.attr("still", imgStill);
                 image.attr("animate", imgAnimate);
-                $(".imageHolder").append(image);
+                $(".imageHolder").prepend(image);
                 var responseRating = response.data[i].rating;
                 var r = $("<p>").text("Rating: " + responseRating);
-                $(".imageHolder").append(r);
+                $(".imageHolder").prepend(r);
 
 
             }
